@@ -1,23 +1,31 @@
 <template>
+
   <div id="app">
-    <img src="./assets/logo.png">
+    <Navbar></Navbar>
     <router-view/>
   </div>
+  
 </template>
 
 <script>
+import Navbar from './components/Nav-aside.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Navbar
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .grid-x{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  h1, h2, h3, h4, h5, h6, p{
+		font-family: 'Raleway', sans-serif;
+		color: #0E2431;
+  }
 </style>
